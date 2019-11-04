@@ -1,0 +1,6 @@
+************* Module test_dataframe
+test_dataframe.py:31:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+test_dataframe.py:34:15: C0123: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+
+-------------------------------------------------------------------
+Your code has been rated at 9.20/10 (previous run: 10.00/10, -0.80)
