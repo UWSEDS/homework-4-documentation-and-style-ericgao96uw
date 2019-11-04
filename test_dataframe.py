@@ -7,7 +7,7 @@ true, else will return false.
 def test_create_dataframe(dataframe, names_list):
     '''
     This test used in homework2.
-    Parameters: dataframe df, list names_list
+    Parameters: dataframe, list names_list
     Returns: True if meets all the test case, False if not
     '''
     if dataframe.columns.tolist() != names_list:
@@ -24,7 +24,7 @@ def test_column_type(dataframe):
     '''
     Test if every row of a column has same type accord with the
     type of this column.
-    Parameters: dataframe df
+    Parameters: dataframe
     Returns: True if meet the test, False if not
     '''
     columns_list = dataframe.columns.tolist()
@@ -38,7 +38,7 @@ def test_column_type(dataframe):
 def test_has_nan(dataframe):
     '''
     Test if there are any column in the dataframe has nan values.
-    Parameters: dataframe df
+    Parameters: dataframe
     Returns: True if it has nan value, False if not
     '''
     for isnan in dataframe.isnull().any().tolist():
@@ -49,7 +49,7 @@ def test_has_nan(dataframe):
 def test_num_of_row(dataframe):
     '''
     Test if the number of rows in dataframe is more than or equal to 1
-    Parameters: dataframe df
+    Parameters: dataframe
     Returns: True if more than or equal to 1, False if not
     '''
     return dataframe.shape[0] >= 1
